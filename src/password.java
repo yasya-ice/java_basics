@@ -10,7 +10,7 @@ public class password {
             String enteredPassword = sc.nextLine();
 
             if (enteredPassword.equals(correctPassword)) {
-                System.out.println("Right!");
+                System.out.println("Right!\n \nThe secret is: fairies exist ");
                 break;
             } else {
                 System.out.println("Wrong!");
