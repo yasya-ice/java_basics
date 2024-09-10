@@ -1,3 +1,5 @@
+package week1;
+
 import java.util.Scanner;
 
 public class circumference {
@@ -9,7 +11,7 @@ public class circumference {
         System.out.print("Type the radius: ");
         double radius = scanner.nextDouble();
 
-        // Calculate the circumference using the formula
+        // Calculate the week1.circumference using the formula
         double circumference = 2 * Math.PI * radius;
 
         // Output the result

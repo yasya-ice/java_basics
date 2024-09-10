@@ -1,3 +1,5 @@
+package week1;
+
 public class seconds_in_year {
     public static void main(String[] args) {
         int SecondsInMinutes= 60;
