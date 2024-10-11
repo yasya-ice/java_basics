@@ -21,7 +21,7 @@ public class Library {
     public ArrayList<Book> searchByTitle(String title) {
         ArrayList<Book> found = new ArrayList<>();
         for (Book book : this.books) {
-            if (book.title().toLowerCase().contains(title.toLowerCase())) {
+            if (StringUtils.included(book.title(), title)) {
                 found.add(book);
             }
         }
@@ -31,7 +31,7 @@ public class Library {
     public ArrayList<Book> searchByPublisher(String publisher) {
         ArrayList<Book> found = new ArrayList<>();
         for (Book book : this.books) {
-            if (book.publisher().toLowerCase().contains(publisher.toLowerCase())) {
+            if (StringUtils.included(book.publisher(), publisher)) {
                 found.add(book);
             }
         }
@@ -64,12 +64,6 @@ public class Library {
         System.out.println("---");
 
         for (Book book : library.searchByPublisher("Penguin Group")) {
-            System.out.println(book);
-        }
-
-        System.out.println("---");
-
-        for (Book book : library.searchByYear(1851)) {
             System.out.println(book);
         }
     }
